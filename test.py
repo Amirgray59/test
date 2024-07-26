@@ -10,3 +10,11 @@ from sklearn.linear_model import LinearRegression
 model = LinearRegression()
 df = sns.load_dataset("iris")
 
+x = []
+y = []
+
+data = []
+
+for i in df :
+  data.append(df[i])
+print(data)
