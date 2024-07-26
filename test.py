@@ -10,7 +10,7 @@ from sklearn.linear_model import LinearRegression
 model = LinearRegression()
 df = sns.load_dataset("iris")
 
-x = []
+x = None
 y = []
 
 data = []
