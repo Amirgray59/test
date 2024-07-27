@@ -14,7 +14,3 @@ x = []
 y = []
 
 data = []
-
-for i in df :
-  data.append(df[i])
-print(data)
