@@ -10,11 +10,15 @@ from sklearn.linear_model import LinearRegression
 model = LinearRegression()
 df = sns.load_dataset("iris")
 
-x = []
-y = []
-
 data = []
 
 for i in df :
   data.append(df[i])
-print(data)
+
+x = df.iloc[:, :-1]
+y = df.iloc[:, -1]
+
+for i in df :
+    enc = LabelEncoder()
+    enc.fit(df[i])
+    df[i] = enc.transform(df[i])
