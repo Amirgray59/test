@@ -18,6 +18,9 @@ for i in df :
 x = df.iloc[:, :-1]
 y = df.iloc[:, -1]
 
+print(x)
+print(y)
+
 for i in df :
     enc = LabelEncoder()
     enc.fit(df[i])
