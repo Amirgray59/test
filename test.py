@@ -1,6 +1,6 @@
 
 print("test.py")
 
-x = 24
-print(x**3)
+x = 48
+y = 24
 
